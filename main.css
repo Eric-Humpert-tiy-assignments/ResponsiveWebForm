@@ -75,11 +75,20 @@ textarea {
 	vertical-align: top;
 }
 
+:: -webkit-input-placeholder {
+	color: #2A6B9A;
+}
+
 .column {
   float: left;
 	margin: 1% 0;
 	margin-left: 3%;
   width: 30.333333%;
+}
+
+.textBox: focus {
+	outline: none;
+	border: solid 2px #2A6B9A;
 }
 
 .textBox {
@@ -110,3 +119,9 @@ textarea {
 /***********************************
 Responsive functions
 ***********************************/
+
+@media screen and (max-width: 750px) {
+	.column {
+		width: 100%;
+	}
+}
